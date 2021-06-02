@@ -16,6 +16,7 @@ function ContextProvider({ children }) {
 
     useEffect(() => {
         getInitialJoke()
+        // eslint - disable - next - line react - hooks / exhaustive - deps
     }, [])
 
     return <ContextValue.Provider value={{ randomJoke, setRandomJoke, categoryName }}>

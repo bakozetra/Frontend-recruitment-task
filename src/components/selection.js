@@ -23,8 +23,8 @@ function Categories({ onChange }) {
   return (
     <SelectCategory name="categories" id="categories-select" placeholder="Categories" onChange={onChange}>
       <Option value=''>Select category</Option>
-      {categoryName?.value?.map(cat => {
-        return <Option value={cat}>{cat}</Option>
+      {categoryName?.value?.map((cat, index) => {
+        return <Option key={index} value={cat}>{cat}</Option>
       })}
     </SelectCategory>
   )

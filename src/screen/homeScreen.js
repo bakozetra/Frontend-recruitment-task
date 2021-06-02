@@ -72,27 +72,27 @@ const HomeScreen = () => {
             </Form>
             <div>
                 <Button
-                    name={personalJoke == '' ? 'Draw a random Chuck Norris Joke' : `Draw a random ${personalJoke} Joke`}
+                    name={personalJoke === '' ? 'Draw a random Chuck Norris Joke' : `Draw a random ${personalJoke} Joke`}
                     onClick={nextJokeCallBack}
                     style={
                         {
-                            width: "439px", color: "white",
+                            color: "white",
                             width: "100%",
                             maxWidth: "439px",
                             height: "58px",
                             margin: "32px 0 16px",
                             border: "solid 1px gray",
-                            backgroundColor: "white",
                             borderRadius: "10px",
                             backgroundColor: "#34394f",
                         }
-                    } />
+                    }
+                />
             </div>
             <Wrapper>
                 <Count>
-                    <Button svg={Minus} style={{ backgroundColor: "#f5f6f8", border: "none" }} />
+                    <Button svg={Minus} style={{ backgroundColor: "#f5f6f8", border: "none" }} onClick={() => setCount(count - 1)} alt='icone - minus' />
                     <p>{count}</p>
-                    <Button svg={Plus} style={{ backgroundColor: "#f5f6f8", border: "none" }} />
+                    <Button svg={Plus} style={{ backgroundColor: "#f5f6f8", border: "none" }} onClick={() => setCount(count + 1)} alt="icone-plus" />
                 </Count>
                 <form>
                     <Button
