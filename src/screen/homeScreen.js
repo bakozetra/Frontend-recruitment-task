@@ -55,6 +55,7 @@ const HomeScreen = () => {
         if (joke) {
             setRandomJoke(joke)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps 
     }, [selectedCategory, randomJoke, personalJoke])
 
     const saveJoke = (e) => {
