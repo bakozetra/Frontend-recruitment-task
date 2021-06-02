@@ -1,12 +1,10 @@
+import React from "react"
+import HomeScreen from "./screen/homeScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello
-      </header>
-    </div>
-  );
+    <HomeScreen />
+  )
 }
 
 export default App;
