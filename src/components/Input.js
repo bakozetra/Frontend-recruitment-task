@@ -7,7 +7,14 @@ const InputStyle = style.input`
   margin: 32px 0 16px;
   border: solid 1px gray;
   background-color: white;
-  border-radius : 10px;`
+  border-radius : 10px; 
+  padding-left : 16px ;
+  &::placeholder {
+      color : #c4c4c4; 
+      font-size : 16px
+     
+  }
+  `
 
 export function Input({ onChange, placeholder, value }) {
   return (

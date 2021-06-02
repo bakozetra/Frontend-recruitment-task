@@ -9,12 +9,15 @@ const SelectCategory = Style.select`
   border: solid 1px gray;
   background-color: white;
   border-radius : 10px;
+  font-size : 16px;
+  color : #c4c4c4;
 }`
 
 const Option = Style.option`
    background-color: #e9e9e9;
    border : none
-   position : absolute
+   position : absolute;
+  
 `
 
 function Categories({ onChange }) {
